@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Kaomozi extends Actor
+public class Doctor extends Actor
 {
     /**
      * Act - do whatever the Kaomozi wants to do. This method is called whenever
@@ -14,7 +14,7 @@ public class Kaomozi extends Actor
      */
     
     public void act() 
-    {
+    {   
         if(Greenfoot.isKeyDown("up")){
             setRotation(270);
             move(1);
