@@ -14,6 +14,10 @@ public class Virus extends Actor
      */
     public void act() 
     {
+        move(-1);
+        if(getX() == 0){
+            getWorld().removeObject(this);
+        }
         // Add your action code here.
     }    
 }
