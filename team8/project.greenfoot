@@ -1,14 +1,17 @@
 #Greenfoot project file
 class.Doctor.image=fight_virus_man.png
 class.Kit.image=iryou_kusuribako2.png
-class.MyWorld.image=wuhan.jpg
+class.MyWorld.image=wuchan.png
 class.Virus.image=virus_corona.png
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
+dependency1.from=MyWorld
+dependency1.to=Virus
+dependency1.type=UsesDependency
+editor.fx.0.height=722
+editor.fx.0.width=800
+editor.fx.0.x=790
+editor.fx.0.y=228
 height=585
-package.numDependencies=0
+package.numDependencies=1
 package.numTargets=4
 project.charset=UTF-8
 publish.hasSource=false
