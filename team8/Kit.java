@@ -14,6 +14,9 @@ public class Kit extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        move(-1);
+        if(getX() == 0){
+            getWorld().removeObject(this);
+        }
     }    
 }

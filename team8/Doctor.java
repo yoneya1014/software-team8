@@ -12,24 +12,30 @@ public class Doctor extends Actor
      * Act - do whatever the Kaomozi wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    
+    private boolean movingleft = true;
     public void act() 
     {   
-        if(Greenfoot.isKeyDown("up")){
-            setRotation(270);
-            move(1);
+        int x = getX();
+        int y = getY();
+        if( Greenfoot.isKeyDown( "left" ) ){
+            if( ! movingleft ){
+                movingleft = true;
+                getImage().mirrorHorizontally();
+            }
+            setLocation( x-1,y );
         }
-        if(Greenfoot.isKeyDown("down")){
-            setRotation(90);
-            move(1);
+        if( Greenfoot.isKeyDown( "right" ) ){
+            if( movingleft ){
+                movingleft = false;
+                getImage().mirrorHorizontally();
+            }
+            setLocation( x+1,y );
         }
-        if(Greenfoot.isKeyDown("left")){
-            setRotation(180);
-            move(1);
+        if( Greenfoot.isKeyDown( "up" ) ){
+            setLocation( x,y-1 );
         }
-        if(Greenfoot.isKeyDown("right")){
-            setRotation(0);
-            move(1);
+        if( Greenfoot.isKeyDown( "down" ) ){
+            setLocation( x,y+1 );
         }
     }    
 }
