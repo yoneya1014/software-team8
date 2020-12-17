@@ -19,5 +19,9 @@ public class Virus extends Actor
             getWorld().removeObject(this);
         }
         // Add your action code here.
+        Actor actor = getOneIntersectingObject( Virus.class );
+        if( actor != null ){
+        getWorld().removeObject( actor ); 
+        }  
     }    
 }
