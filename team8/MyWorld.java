@@ -28,7 +28,7 @@ public class MyWorld extends World
             addObject(new Virus(), 610, Greenfoot.getRandomNumber(350));
             time = 0;
         }
-        if(time2 == 150){
+        if(time2 == 500){
             addObject(new Kit(), 610, Greenfoot.getRandomNumber(350));
             time2 = 0;
         }

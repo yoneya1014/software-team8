@@ -37,5 +37,14 @@ public class Doctor extends Actor
         if( Greenfoot.isKeyDown( "down" ) ){
             setLocation( x,y+1 );
         }
-    }    
+        
+        Actor virus = getOneIntersectingObject( Virus.class );
+        if( virus != null ){
+            getWorld().removeObject(virus);
+        }
+        Actor kit = getOneIntersectingObject( Kit.class );
+        if( kit != null ){
+            getWorld().removeObject(kit);
+        }
+    }
 }
