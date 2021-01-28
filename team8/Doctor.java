@@ -28,20 +28,20 @@ public class Doctor extends Actor
                 movingleft = true;
                 getImage().mirrorHorizontally();
             }
-            setLocation( x-1,y );
+            setLocation( x-2,y );
         }
         if( Greenfoot.isKeyDown( "right" ) ){
             if( movingleft ){
                 movingleft = false;
                 getImage().mirrorHorizontally();
             }
-            setLocation( x+1,y );
+            setLocation( x+2,y );
         }
         if( Greenfoot.isKeyDown( "up" ) ){
-            setLocation( x,y-1 );
+            setLocation( x,y-2 );
         }
         if( Greenfoot.isKeyDown( "down" ) ){
-            setLocation( x,y+1 );
+            setLocation( x,y+2 );
         }
         
         Actor virus = getOneIntersectingObject( Virus.class );
