@@ -13,6 +13,12 @@ public class Doctor extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private boolean movingleft = true;
+    private HitPoint hitPoint = null;
+    
+    public Doctor(){
+        this.hitPoint = new HitPoint();
+    }
+    
     public void act() 
     {   
         int x = getX();

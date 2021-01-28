@@ -19,6 +19,7 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(610, 350, 1); 
         addObject(new Doctor(), 50, 200);
+        addObject(new Hp(), 15, 50);
     }
     
     public void act(){
